@@ -130,6 +130,7 @@ const Workspace = async ({ params: { invite_code }, searchParams }: Params) => {
       userId: session.user.id,
       workspaceId: inviteCodeValid.id,
       userRole: userRole(),
+      lastTimeActive: '0000'
     },
   });
 

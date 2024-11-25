@@ -22,6 +22,7 @@ model User {
   sessions      Session[]
   createdWorkspaces Workspace[] @relation("CreatedBy")
   subscriptions Subscription[]
+  lastTimeActive String?
   useCase UseCase?
   createdTasks Task[] @relation("TaskCreatedByUser")
   updatedTasks Task[] @relation("TaskUpdatedByUser")
@@ -303,6 +304,7 @@ model Subscription {
   workspace Workspace @relation(fields: [workspaceId],references: [id], onDelete: Cascade)
   workspaceId String
   userRole UserPermission @default(READ_ONLY)
+  lastTimeActive String?
 
   @@id([userId, workspaceId])
  

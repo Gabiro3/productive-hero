@@ -71,6 +71,7 @@ export async function POST(request: Request) {
         userId: user.id,
         workspaceId: workspace.id,
         userRole: "OWNER",
+        lastTimeActive: '0000'
       },
     });
 

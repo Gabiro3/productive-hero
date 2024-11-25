@@ -12,6 +12,7 @@ export async function POST(request: Request) {
   }
 
   const { email, password, username } = result.data;
+  console.log(result.data);
 
   try {
     const existedUsername = await db.user.findUnique({
@@ -41,6 +42,7 @@ export async function POST(request: Request) {
         hashedPassword,
       },
     });
+    console.log(newUser);
 
     return NextResponse.json(newUser, { status: 200 });
   } catch (err) {

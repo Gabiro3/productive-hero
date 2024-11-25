@@ -17,8 +17,8 @@ import { ACTIVITY_PER_PAGE } from "./constants";
 
 export const domain =
   process.env.NODE_ENV !== "production"
-    ? "http://localhost:3000"
-    : "http://localhost:3000";
+    ? "https://productive-hero.vercel.app"
+    : "https://productive-hero.vercel.app";
 
 export const getWorkspace = async (workspace_id: string, userId: string) => {
   const res = await fetch(

@@ -71,7 +71,7 @@ export const MindMapCardPreviewOptions = ({
     },
     onSuccess: () => {
       toast({
-        title: m("SUCCESS.MIND_MAP_DELETED"),
+        title: "Mind Map deleted successfully!",
       });
 
       //@ts-ignore

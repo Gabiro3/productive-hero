@@ -87,7 +87,7 @@ export const AddUserImage = ({ profileImage, className }: Props) => {
   const { startUpload, isUploading } = useUploadThing("imageUploader", {
     onUploadError: (error) => {
       toast({
-        title: m("ERRORS.UPLOAD_TITLE"),
+        title: "An error occurred, Try again!",
         variant: "destructive",
       });
     },
@@ -95,7 +95,7 @@ export const AddUserImage = ({ profileImage, className }: Props) => {
       if (data) uploadProfileImage(data[0].url);
       else {
         toast({
-          title: m("ERRORS.IMAGE_PROFILE_UPDATE"),
+          title: "Profile could not be updated. Try again.",
           variant: "destructive",
         });
       }
@@ -117,7 +117,7 @@ export const AddUserImage = ({ profileImage, className }: Props) => {
     },
     onSuccess: async () => {
       toast({
-        title: m("SUCCESS.IMAGE_PROFILE_UPDATE"),
+        title: "Profile image updated successfully!",
       });
       setOpen(false);
       await update();
@@ -139,7 +139,7 @@ export const AddUserImage = ({ profileImage, className }: Props) => {
     },
     onSuccess: async () => {
       toast({
-        title: m("SUCCESS.IMAGE_PROFILE_UPDATE"),
+        title: "Profile image updated successfully!",
       });
       await update();
       router.refresh();

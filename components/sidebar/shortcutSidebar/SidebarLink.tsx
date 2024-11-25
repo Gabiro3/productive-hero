@@ -27,8 +27,9 @@ export const SidebarLink = ({ hoverTextKey, href, Icon, include }: Props) => {
           variant={"ghost"}
           size={"icon"}
           href={href}
+          className="flex items-center justify-center w-12 h-12" // Adjust width and height
         >
-          <Icon />
+          <Icon className="w-6 h-6" /> {/* Adjust icon size */}
         </ActiveLink>
       </HoverCardTrigger>
       <HoverCardContent align="start">
@@ -37,3 +38,4 @@ export const SidebarLink = ({ hoverTextKey, href, Icon, include }: Props) => {
     </HoverCard>
   );
 };
+

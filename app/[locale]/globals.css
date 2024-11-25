@@ -17,8 +17,9 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 5%;
 
-    --primary: 0 80% 44%;
-    --primary-foreground: 0 0% 98%;
+    /* Updated primary color to sky blue */
+    --primary: 200 90% 60%;
+    --primary-foreground: 200 90% 10%;
 
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 5%;
@@ -37,6 +38,7 @@ body {
     --ring: 0 0% 76%;
 
     --radius: 0.5rem;
+    --content-padding: 1rem !important;
   }
 
   .dark {
@@ -49,8 +51,9 @@ body {
     --popover: 0 6% 7%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 78% 55%;
-    --primary-foreground: 0 0% 98%;
+    /* Updated primary color to sky blue for dark mode */
+    --primary: 200 80% 55%;
+    --primary-foreground: 200 90% 10%;
 
     --secondary: 0 5% 15%;
     --secondary-foreground: 0 0% 98%;
@@ -66,18 +69,21 @@ body {
 
     --border: 0 5% 12%;
     --input: 0 4% 18%;
-    --ring: 0 78% 40%;
+    --ring: 200 90% 60%;
+    --content-padding: 1rem !important;
   }
 }
 
+
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border p-4; /* Apply Tailwind padding utility (4 means 1rem) */
   }
   body {
     @apply bg-background text-foreground;
   }
 }
+
 
 .emoji-picker em-emoji-picker {
   ---rgb-accen: 34, 197, 94;

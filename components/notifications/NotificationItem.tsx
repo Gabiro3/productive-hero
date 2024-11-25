@@ -85,7 +85,7 @@ export const NotificationItem = ({
       );
 
       toast({
-        title: m("ERRORS.CANT_UPDATE_SEEN_NOTIFY"),
+        title: "CANT_UPDATE_SEEN_NOTIFY",
         variant: "destructive",
       });
     },

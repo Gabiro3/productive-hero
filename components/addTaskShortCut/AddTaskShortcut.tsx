@@ -127,7 +127,7 @@ export const AddTaskShortcut = ({ userId }: Props) => {
       await queryclient.refetchQueries(["getCalendarItems", userId]);
 
       toast({
-        title: m("SUCCES.TASK_ADDED"),
+        title: "Task added successfully!",
       });
 
       setNewTaskLink(
@@ -146,7 +146,7 @@ export const AddTaskShortcut = ({ userId }: Props) => {
       const error = err?.response?.data ? err.response.data : "ERRORS.DEFAULT";
 
       toast({
-        title: m(error),
+        title: "An error occurred",
         variant: "destructive",
       });
     },

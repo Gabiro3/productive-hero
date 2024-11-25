@@ -87,7 +87,7 @@ export const InviteContent = ({
     },
     onSuccess: async () => {
       toast({
-        title: m("SUCCESS.REGENERATED_LINK"),
+        title: "Invite link code generated!",
       });
       router.refresh();
     },

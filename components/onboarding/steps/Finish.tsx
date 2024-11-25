@@ -43,7 +43,7 @@ export const Finish = () => {
     onSuccess: async () => {
       setIsDone(true);
       toast({
-        title: m("SUCCESS.ONBOARDING_COMPLETE"),
+        title: "Hooray! onboarding was a success. Enjoy!",
       });
       await update();
       router.push("/dashboard");

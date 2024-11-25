@@ -91,7 +91,7 @@ export const NotificationContainer = ({ userId }: Props) => {
       );
 
       toast({
-        title: m("ERRORS.CANT_UPDATE_SEEN_NOTIFY"),
+        title: "CANT_UPDATE_SEEN_NOTIFY",
         variant: "destructive",
       });
     },
@@ -136,7 +136,7 @@ export const NotificationContainer = ({ userId }: Props) => {
       );
 
       toast({
-        title: m("ERRORS.CANT_UPDATE_SEEN_NOTIFY"),
+        title: "CANT_UPDATE_SEEN_NOTIFY",
         variant: "destructive",
       });
     },

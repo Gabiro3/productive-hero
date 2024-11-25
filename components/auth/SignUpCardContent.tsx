@@ -53,7 +53,7 @@ export const SignUpCardContent = () => {
 
       if (res.status === 200) {
         toast({
-          title: m("SUCCESS.SIGN_UP"),
+          title: "Account created successfully!"
         });
         await signIn("credentials", {
           email: data.email,
@@ -70,7 +70,7 @@ export const SignUpCardContent = () => {
         errMsg = m(err.message);
       }
       toast({
-        title: errMsg,
+        title: "An error occurred, try again!",
         variant: "destructive",
       });
     }

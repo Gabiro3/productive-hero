@@ -47,7 +47,7 @@ export const DeleteAllNodes = ({ workspaceId, mindMapId }: Props) => {
       onSetStatus("saved");
       setNodes([]);
       toast({
-        title: t("MESSAGE.SUCCES"),
+        title: "Message saved successfully!",
       });
       setOpen(false);
     },

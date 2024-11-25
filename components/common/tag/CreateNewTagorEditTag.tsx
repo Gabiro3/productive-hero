@@ -144,7 +144,7 @@ export const CreateNewTagOrEditTag = ({
     },
     onSuccess: () => {
       toast({
-        title: m("SUCCESS.UPDATED_WORKSPACE"),
+        title: "Workspace updated successfully!",
       });
     },
     mutationKey: ["newTag"],

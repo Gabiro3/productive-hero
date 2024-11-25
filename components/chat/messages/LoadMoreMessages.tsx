@@ -36,7 +36,7 @@ export const LoadMoreMessages = ({ chatId, sessionUserId }: Props) => {
       if (data) setMessages(data.reverse());
     } catch (err) {
       toast({
-        title: m("CANT_LOAD_MORE"),
+        title: "No more conversations here!",
         variant: "destructive",
       });
     }

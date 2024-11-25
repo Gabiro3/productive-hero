@@ -50,12 +50,12 @@ export const SignInCardContent = () => {
 
       if (account.error) {
         toast({
-          title: m(account.error),
+          title: "An error occurred, Try again!",
           variant: "destructive",
         });
       } else {
         toast({
-          title: m("SUCCESS.SIGN_IN"),
+          title: "Welcome back!",
         });
         router.push("/onboarding");
         router.refresh();
@@ -68,7 +68,7 @@ export const SignInCardContent = () => {
         errMsg = m(err.message);
       }
       toast({
-        title: errMsg,
+        title: "An error occurred, Try again!",
         variant: "destructive",
       });
     }

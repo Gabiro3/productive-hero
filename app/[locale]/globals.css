@@ -38,7 +38,6 @@ body {
     --ring: 0 0% 76%;
 
     --radius: 0.5rem;
-    --content-padding: 1rem !important;
   }
 
   .dark {
@@ -70,14 +69,13 @@ body {
     --border: 0 5% 12%;
     --input: 0 4% 18%;
     --ring: 200 90% 60%;
-    --content-padding: 1rem !important;
   }
 }
 
 
 @layer base {
   * {
-    @apply border-border p-4; /* Apply Tailwind padding utility (4 means 1rem) */
+    @apply border-border; /* Apply Tailwind padding utility (4 means 1rem) */
   }
   body {
     @apply bg-background text-foreground;

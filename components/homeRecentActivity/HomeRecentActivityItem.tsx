@@ -69,7 +69,7 @@ export const HomeRecentActivityItem = ({
                         className={cn(
                           `${buttonVariants({
                             variant: "link",
-                          })} px-0`
+                          })} px-1`
                         )}
                         href={`/dashboard/workspace/${workspaceId}`}
                       >

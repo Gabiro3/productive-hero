@@ -41,7 +41,7 @@ export const RecentActivityItem = ({
               className="sm:h-16 sm:w-16 h-12 w-12"
               selectedEmoji={emoji}
             />
-            <div className="w-full px-1">
+            <div className="w-full">
               <div className="flex items-center">
                 <h2 className="text-lg sm:text-2xl font-semibold">
                   {!title && type === "mindMap" && c("DEFAULT_NAME.MIND_MAP")}

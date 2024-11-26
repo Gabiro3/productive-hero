@@ -41,9 +41,9 @@ export const TagItem = ({ tag: { color, id, name } }: Props) => {
   }, [color]);
 
   return (
-    <div className="w-fit flex gap-2 items-center px-2.25 py-0.5 h-fit text-xs rounded-lg border border-input bg-background">
+    <div className="w-fit flex gap-1 items-center px-2.25 py-0.5 h-fit text-xs rounded-md border border-input bg-background">
       <Tag className={`w-3 h-3 ${tagColor}`} size={16} />
-      <span>{name}</span>
+      <span className="px-1">{name}</span>
     </div>
   );
 };

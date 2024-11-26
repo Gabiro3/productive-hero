@@ -16,9 +16,10 @@ export const AssignedToTaskUser = ({
   const name = useTruncateText(username, 25);
 
   return (
-    <div className="w-fit flex gap-2 items-center px-2.25 py-0.5 h-fit text-xs rounded-lg border border-input bg-background">
-      <UserAvatar className="w-4 h-4" size={10} profileImage={image} />
+    <div className="w-fit flex gap-2 items-center px-3 py-1 h-fit text-xs rounded-md border border-input bg-background">
+      <UserAvatar className="w-5 h-5" size={12} profileImage={image} />
       <p className="text-secondary-foreground">{name}</p>
     </div>
+
   );
 };

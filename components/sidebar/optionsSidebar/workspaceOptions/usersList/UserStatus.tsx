@@ -25,7 +25,7 @@ export const UserStatus = ({ image, username, maxText, active }: Props) => {
           size={14}
         />
         {active && (
-          <div className="absolute bottom-0 right-0 w-3 h-3 rounded-full border-border shadow-sm border-2 bg-primary"></div>
+          <div className="absolute bottom-0 right-0 w-3 h-3 rounded-full border-border shadow-sm border-2 green"></div>
         )}
       </div>
       <p className="text-primary text-sm sm:text-base break-words">{name}</p>

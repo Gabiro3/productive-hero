@@ -103,34 +103,6 @@ export const User = ({ profileImage, username, email }: Props) => {
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>
-          <DropdownMenuSub>
-            <DropdownMenuSubTrigger className="cursor-pointer gap-2">
-              <Globe size={16} />
-              <span>{t("LANG_HOVER")}</span>
-            </DropdownMenuSubTrigger>
-            <DropdownMenuPortal>
-              <DropdownMenuSubContent sideOffset={10}>
-                <DropdownMenuItem
-                  onClick={() => {
-                    onSelectChange("en");
-                  }}
-                  className="flex justify-between items-center cursor-pointer"
-                >
-                  <span>English</span>
-                  {lang === "en" && <Check size={14} />}
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  onClick={() => {
-                    onSelectChange("te");
-                  }}
-                  className="flex justify-between items-center cursor-pointer"
-                >
-                  <span>Telugu</span>
-                  {lang === "te" && <Check size={14} />}
-                </DropdownMenuItem>
-              </DropdownMenuSubContent>
-            </DropdownMenuPortal>
-          </DropdownMenuSub>
           <DropdownMenuItem className="cursor-pointer gap-2" asChild>
             <Link href={"/dashboard/settings"}>
               <Settings2 size={16} /> {t("SETTINGS")}

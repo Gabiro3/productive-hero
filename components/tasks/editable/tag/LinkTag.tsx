@@ -46,19 +46,20 @@ export const LinkTag = ({
   }, [color]);
   return (
     <Link
-      aria-disabled={disabled}
-      href={`/dashboard/workspace/${workspaceId}?tagId=${id}`}
-      className={cn(
-        `${buttonVariants({
-          variant: "outline",
-          size: "sm",
-        })} px-2.5 py-0.5 h-fit text-xs ${
-          disabled ? "pointer-events-none" : ""
-        }`
-      )}
-    >
-      <Tag size={16} className={`mr-2 w-3 h-3 ${tagColor}`} />
-      <span>{name}</span>
-    </Link>
+  aria-disabled={disabled}
+  href={`/dashboard/workspace/${workspaceId}?tagId=${id}`}
+  className={cn(
+    `${buttonVariants({
+      variant: "outline",
+      size: "sm",
+    })} px-3 py-1 h-fit text-xs ${
+      disabled ? "pointer-events-none" : ""
+    }`
+  )}
+>
+  <Tag size={16} className={`mr-2 w-4 h-4 ${tagColor}`} />
+  <span>{name}</span>
+</Link>
+
   );
 };

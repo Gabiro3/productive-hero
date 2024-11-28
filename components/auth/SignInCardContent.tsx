@@ -57,7 +57,16 @@ export const SignInCardContent = () => {
         toast({
           title: "Welcome back!",
         });
-        sendWelcomeEmail(data.email, "Student");
+        await fetch("/emails/post/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: data.email,
+            name: "Student", // Replace "Student" with the appropriate dynamic name if available
+          }),
+        });
         router.push("/onboarding");
         router.refresh();
       }

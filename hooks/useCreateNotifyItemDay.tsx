@@ -49,11 +49,11 @@ export const useCreateNotifyItemDay = (
       });
     case "NEW_ASSIGNMENT_TASK":
       link = `/dashboard/workspace/${workspace?.id}/tasks/task/${taskId}`;
-      textContent = t("NEW_ASSIGNMENT_TASK_TEXT", { name: workspace?.name });
+      textContent = t("New Assigned task!", { name: workspace?.name });
       break;
     case "NEW_ASSIGNMENT_MIND_MAP":
       link = `/dashboard/workspace/${workspace?.id}/mind-maps/mind-map/${mindMapId}`;
-      textContent = t("NEW_ASSIGNMENT_MIND_MAP_TEXT", {
+      textContent = t("New Assigned mind map!", {
         name: workspace?.name,
       });
       break;

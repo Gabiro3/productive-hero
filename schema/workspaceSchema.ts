@@ -44,7 +44,7 @@ export const apiWorkspaceSchema = z.object({
     .string()
     .min(4, "SCHEMA.WORKSPACE.SHORT")
     .refine((username) => /^[a-zA-Z0-9]+$/.test(username), {
-      message: "Workspace already exists. Try another name.",
+      message: "SCHEMA.WORKSPACE.SPECIAL_CHARS",
     }),
   file: z.string().optional().nullable(),
 });

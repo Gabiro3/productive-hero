@@ -14,7 +14,7 @@ import { ProviderSignInBtns } from "./ProviderSignInBtns";
 import { Input } from "../ui/input";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
-import Link from "next/link";
+import { sendWelcomeEmail } from "@/emails/sign-up";
 import { signInSchema, SignInSchema } from "@/schema/signInSchema";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -57,6 +57,7 @@ export const SignInCardContent = () => {
         toast({
           title: "Welcome back!",
         });
+        sendWelcomeEmail(data.email, "Student");
         router.push("/onboarding");
         router.refresh();
       }

@@ -55,7 +55,7 @@ export const DeleteWorkspace = ({ workspace: { id, name } }: Props) => {
       .string()
       .refine(
         (workspaceName) => workspaceName === name,
-        "SCHEMA.WORKSPACE.WRONG_NAME"
+        "Type in the correct workspace name."
       ),
   });
 
@@ -87,7 +87,7 @@ export const DeleteWorkspace = ({ workspace: { id, name } }: Props) => {
     },
     onSuccess: async () => {
       toast({
-        title: m("SUCCESS.DELETED_WORKSPACE_INFO"),
+        title: m("Workspace deleted successfully!"),
       });
 
       router.push("/dashboard/settings");

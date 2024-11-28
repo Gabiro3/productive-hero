@@ -94,7 +94,7 @@
     "FINISH": {
       "TITLE": "That's it!",
       "DESC_FIRST": "You can already start using",
-      "DESC_SECOND": "by clicking the button below"
+      "DESC_SECOND": " by clicking the button below"
     },
     "START_BTN": "Start",
     "NEXT_BTN": "Continue",
@@ -709,13 +709,13 @@
         "CAN_EDIT": "Editor",
         "READ_ONLY": "Viewer"
       },
-      "NEW_USER_IN_WORKSPACE_TEXT": "has joined the workspace {name}",
-      "USER_LEFT_WORKSPACE_TEXT": "has left the workspace {name}",
-      "NEW_TASK_TEXT": "has added a new task in the workspace {name}",
-      "NEW_MIND_MAP_TEXT": "has added a new mind map in the workspace {name}",
-      "NEW_ROLE_TEXT": "You have been granted {role} level permissions in the workspace {name}",
-      "NEW_ASSIGMENT_TASK_TEXT": "You have been assigned a task in the workspace {name}",
-      "NEW_ASSIGMENT_MIND_MAP_TEXT": "You have been assigned to a mind map in the workspace {name}"
+      "NEW_USER_IN_WORKSPACE_TEXT": " has joined the workspace {name}",
+      "USER_LEFT_WORKSPACE_TEXT": " has left the workspace {name}",
+      "NEW_TASK_TEXT": " has added a new task in the workspace {name}",
+      "NEW_MIND_MAP_TEXT": " has added a new mind map in the workspace {name}",
+      "NEW_ROLE_TEXT": " You have been granted {role} level permissions in the workspace {name}",
+      "NEW_ASSIGMENT_TASK_TEXT": " You have been assigned a task in the workspace {name}",
+      "NEW_ASSIGMENT_MIND_MAP_TEXT": " You have been assigned to a mind map in the workspace {name}"
     }
   },
   "HOME_PAGE": {
